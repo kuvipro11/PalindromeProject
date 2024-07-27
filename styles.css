@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "teko";
+    src: url(Fonts/Teko-VariableFont_wght.ttf);
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -6,4 +11,24 @@
 
 body {
     background-color: rgb(1, 6, 34);
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+body > div {
+    width: fit-content;
+    background-color: rgb(10, 8, 8);
+    border: 2px solid white;
+    color: white;
+}
+
+#user-input-section > p {
+    font-family: "teko";
+    font-size: 28px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
 }
