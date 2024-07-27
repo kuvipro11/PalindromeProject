@@ -3,7 +3,12 @@
     src: url(Fonts/Teko-VariableFont_wght.ttf);
 }
 
-*, ::before, ::after {
+@font-face {
+    font-family: "roboto-bold";
+    src: url(Fonts/Roboto-Bold.ttf);
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -22,6 +27,15 @@ body > div {
     background-color: rgb(10, 8, 8);
     border: 2px solid white;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #user-input-section > p {
@@ -31,4 +45,17 @@ body > div {
     font-style: italic;
     text-align: center;
     padding: 1rem;
+}
+
+#user-input {
+    width: 18rem;
+    height: 2.5rem;
+    padding-left: 7px;
+    background-color: rgb(3, 6, 36);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: "roboto-bold";
+    font-size: 16px;
+    margin-bottom: 15px;
 }
