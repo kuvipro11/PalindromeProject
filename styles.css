@@ -71,3 +71,16 @@ body > div {
     border: 2px solid white;
     border-radius: 20px;
 }
+
+#result {
+    background-color: rgb(149, 152, 190);
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+#result-statement {
+    font-family: "teko";
+    font-size: 26px;
+    color: white;
+    padding: 1rem;
+}
