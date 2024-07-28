@@ -59,3 +59,15 @@ body > div {
     font-size: 16px;
     margin-bottom: 15px;
 }
+
+#submit-btn {
+    padding: 0.5rem 2rem;
+    font-family: "teko";
+    font-size: 18px;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(90deg, rgb(243, 0, 211), rgb(140, 0, 255));
+    color: white;
+    font-weight: bolder;
+    border: 2px solid white;
+    border-radius: 20px;
+}
