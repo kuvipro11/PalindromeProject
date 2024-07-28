@@ -72,6 +72,14 @@ body > div {
     border-radius: 20px;
 }
 
+#submit-btn:hover {
+    background: red;
+}
+
+#submit-btn:active {
+    background: blue;
+}
+
 #result {
     display: none;
     background-color: rgb(75, 76, 97);
