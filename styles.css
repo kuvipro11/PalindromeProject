@@ -16,10 +16,10 @@
 
 body {
     background-color: rgb(1, 6, 34);
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 body > div {
@@ -73,7 +73,8 @@ body > div {
 }
 
 #result {
-    background-color: rgb(149, 152, 190);
+    display: none;
+    background-color: rgb(75, 76, 97);
     margin-top: 1rem;
     margin-bottom: 5rem;
 }
@@ -83,4 +84,19 @@ body > div {
     font-size: 26px;
     color: white;
     padding: 1rem;
+}
+
+#what-palindrom {
+    padding: 1rem;
+    background-color: rgb(29, 15, 56);
+    margin-bottom: 2rem;
+    border: 1.5px solid white;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#what-palindrom > p {
+    font-family: "teko";
+    font-size: 20px;
+
 }
