@@ -9,3 +9,8 @@ function modifyString(str) {
     return modifiedString.replace(/[^\d\w\s]/g, "");    
 }
 
+function palindromChecker(str) {
+    return str === str.split("").reverse().join("");
+}
+
+console.log(palindromChecker(modifyString("d!@ad")));
