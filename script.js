@@ -10,5 +10,14 @@ function modifyString(str) {
 }
 
 function palindromChecker(str) {
-    return str === str.split("").reverse().join("");
+    return str === str.split("").reverse().join("") ? "is a palindrom." : "is not a palindrom.";
+}
+
+function displayResult(str, statement) {
+    if (resultIsShowing) {
+        document.getElementById("result-statement").innerText = `${str} ${statement}`;
+    }else {
+        result.innerHTML = `<p id="result-statement">${str} ${statement}</p>`
+        resultIsShowing = true;
+    }    
 }
