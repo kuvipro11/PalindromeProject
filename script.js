@@ -12,5 +12,3 @@ function modifyString(str) {
 function palindromChecker(str) {
     return str === str.split("").reverse().join("");
 }
-
-console.log(palindromChecker(modifyString("d!@ad")));
