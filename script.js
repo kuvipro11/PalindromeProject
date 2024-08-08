@@ -1,4 +1,4 @@
-const userInput = document.getElementById("user-input");
+
 const submitBtn = document.getElementById("submit-btn");
 const result = document.getElementById("result");
 
@@ -14,10 +14,23 @@ function palindromChecker(str) {
 }
 
 function displayResult(str, statement) {
-    if (resultIsShowing) {
-        document.getElementById("result-statement").innerText = `${str} ${statement}`;
+    if (str) {
+        if (resultIsShowing) {
+            document.getElementById("result-statement").innerText = `${str} ${statement}`;
+        }else {
+            result.style.display = "block";
+            result.innerHTML = `<p id="result-statement">${str} ${statement}</p>`;
+            resultIsShowing = true;
+        } 
     }else {
-        result.innerHTML = `<p id="result-statement">${str} ${statement}</p>`
-        resultIsShowing = true;
-    }    
+        alert("You need to enter a world before proceed...");
+        result.style.display = "none";
+        resultIsShowing = false;
+    }   
 }
+
+submitBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const userInput = document.getElementById("user-input");
+    displayResult(userInput.value, palindromChecker(modifyString(userInput.value)));
+});

@@ -61,6 +61,8 @@ body > div {
 }
 
 #submit-btn {
+    display: block;
+    margin: 0 auto;
     padding: 0.5rem 2rem;
     font-family: "teko";
     font-size: 18px;
@@ -84,7 +86,9 @@ body > div {
     display: none;
     background-color: rgb(75, 76, 97);
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 #result-statement {
